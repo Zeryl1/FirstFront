@@ -17,16 +17,42 @@
             <th>CSS</th>
             <th>Комментарий</th>
         </tr>
-        <tr>
+        <tr >
             <td> <code>
-                    <p class="warning">
-                    </p>
+                    &lt;p class=&quot;warning&quot;&gt; <br>
+                    &lt;/p&gt;
                 </code>
             </td>
             <td> <code> .warning {
                     background:red
                     }</code>
             </td>
+            <td></td>
+        </tr>
+        <tr class="hover">
+            <td> <code>
+                    &lt;p class=&quot;warning border-gold&quot;&gt; <br>
+                    &lt;/p&gt;
+                </code>
+            </td>
+            <td> <code> .border-gold {
+                    border:1px solid yellow
+                    }</code>
+            </td>
+            <td>Можно задавать несколько классов и использовать один класс из нескольких</td>
+        </tr>
+        <tr>
+            <td> <code>
+                    &lt;p class=&quot;warning quot;&gt;
+                    &lt;li&gt;test&lt;/li&gt; <br>
+                    &lt;/p&gt;
+                </code>
+            </td>
+            <td> <code> .warning li {
+                    color: green
+                    }</code>
+            </td>
+            <td>Можно применять стили к атрибутам внутри класса</td>
         </tr>
     </table>
 </body>
