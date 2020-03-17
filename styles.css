@@ -21,3 +21,9 @@ td {
 .hover td {
     background: #ccddff;
 }
+
+caption {
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
