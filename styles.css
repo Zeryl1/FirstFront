@@ -36,3 +36,19 @@ span {
 .stroka {
     font-size: 0
 }
+
+.flex {
+    width: 40px;
+    height: 40px;
+    background: #b9c9fe;
+    border: 1px solid;
+}
+
+section {
+    display: flex;
+}
+
+.section_2 {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}

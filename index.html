@@ -150,7 +150,91 @@
             }
         </code>
     </div>
+    <div>
+        <h3>FlexBox</h3>
+        <p>Это CSS механизм, который позволяет контролировать размер, порядок и выравнивание по нескольким осям.(слева-направо, сверху-вниз)</p>
+        <p>Чтобы создать flexbox, необходимо задать родительскому контейнеру свойство display:flex</p>
+        <table>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <td> <code>
+                        &lt;section&gt; <br>
+                        &lt;div class="flex"&gt;1&lt;/div&gt;<br>
+                        &lt;div class="flex"&gt;2&lt;/div&gt;<br>
+                        &lt;div class="flex"&gt;3&lt;/div&gt;<br>
+                        &lt;div class="flex"&gt;4&lt;/div&gt;<br>
+                        &lt;div class="flex"&gt;5&lt;/div&gt;<br>
+                        &lt;/section&gt;
 
-</body>
+                    </code>
+                </td>
+                <td> <code> .flex {<br>
+                        width: 50px;<br>
+                        height: 50px;<br>
+                        background: lime;<br>
+                        border: 1px solid;<br>
+                        }<br>
+                        section {<br>
+                        display: flex;<br>
+                        }</code>
+                </td>
 
-</html>
+            </tr>
+        </table>
+        <br>
+        <section>
+            <div class="flex">1</div>
+            <div class="flex">2</div>
+            <div class="flex">3</div>
+            <div class="flex">4</div>
+            <div class="flex">5</div>
+        </section>
+        <p>Изменить направление главной оси Flexbox`ов с помощью правила <b>flex-direction</b>: (row|row-reverse|column|column-reverse)</p>
+        <p>Для того, чтобы изменить расположение Flexbox`ов вдоль главной оси, есть правило <b>justify-content</b>: (space-between <i>[без отступов с краев]</i>|space-around <i>[с отступом от края, равным половине расстояния между блоками]</i>|center|flex-start|flex-end</p>
+        <div>
+            <table>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td> <code>
+                            &lt;section&gt; <br>
+                            &lt;div class="flex"&gt;1&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;2&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;3&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;4&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;5&lt;/div&gt;<br>
+                            &lt;/section&gt;
+
+                        </code>
+                    </td>
+                    <td> <code> .flex {<br>
+                            width: 50px;<br>
+                            height: 50px;<br>
+                            background: lime;<br>
+                            border: 1px solid;<br>
+                            }<br>
+                            section {<br>
+                            display: flex;<br>
+                            justify-content: space-around <br>
+                            flex-direction: row-reverse; <br>
+                            }</code>
+                    </td>
+
+                </tr>
+            </table>
+            <br>
+            <section class="section_2">
+                <div class="flex">1</div>
+                <div class="flex">2</div>
+                <div class="flex">3</div>
+                <div class="flex">4</div>
+                <div class="flex">5</div>
+            </section>
+        </div>
+    </div>
+</body></html>
