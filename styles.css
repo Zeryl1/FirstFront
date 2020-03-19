@@ -52,3 +52,10 @@ section {
     justify-content: space-around;
     flex-direction: row-reverse;
 }
+
+.section_3 {
+    justify-content: space-around;
+    align-items:center;
+    border: 1px solid;
+    height: 100px;
+}

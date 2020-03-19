@@ -172,8 +172,8 @@
                     </code>
                 </td>
                 <td> <code> .flex {<br>
-                        width: 50px;<br>
-                        height: 50px;<br>
+                        width: 40px;<br>
+                        height: 40px;<br>
                         background: lime;<br>
                         border: 1px solid;<br>
                         }<br>
@@ -213,8 +213,8 @@
                         </code>
                     </td>
                     <td> <code> .flex {<br>
-                            width: 50px;<br>
-                            height: 50px;<br>
+                            width: 40px;<br>
+                            height: 40px;<br>
                             background: lime;<br>
                             border: 1px solid;<br>
                             }<br>
@@ -236,5 +236,48 @@
                 <div class="flex">5</div>
             </section>
         </div>
+        <p>Для выравнивания по перпендикулярной оси есть правилос align-items:(center|flex-end|flex-start|stretch<i>[при использовании все элементы растягиваются вдоль перпендикулярной оси])</i></p>
+        <div>
+            <table>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td> <code>
+                            &lt;section&gt; <br>
+                            &lt;div class="flex"&gt;1&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;2&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;3&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;4&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;5&lt;/div&gt;<br>
+                            &lt;/section&gt;
+
+                        </code>
+                    </td>
+                    <td> <code> .flex {<br>
+                            width: 40px;<br>
+                            background: lime;<br>
+                            border: 1px solid;<br>
+                            }<br>
+                            section {<br>
+                            display: flex;<br>
+                            justify-content: space-around <br>
+                            align-items:center; <br>
+                            }</code>
+                    </td>
+
+                </tr>
+            </table>
+            <br>
+            <section class="section_3">
+                <div class="flex">1</div>
+                <div class="flex">2</div>
+                <div class="flex">3</div>
+                <div class="flex">4</div>
+                <div class="flex">5</div>
+            </section>
+        </div>
+
     </div>
 </body></html>
