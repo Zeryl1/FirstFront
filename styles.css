@@ -27,3 +27,12 @@ caption {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
 }
+
+span {
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.stroka {
+    font-size: 0
+}
