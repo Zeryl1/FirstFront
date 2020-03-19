@@ -59,3 +59,12 @@ section {
     border: 1px solid;
     height: 100px;
 }
+
+.section_4 {
+border: 1px solid;
+    height: 300px;
+    width: 150px;
+    flex-wrap:wrap;
+    align-content: space-around;
+
+}

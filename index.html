@@ -236,7 +236,7 @@
                 <div class="flex">5</div>
             </section>
         </div>
-        <p>Для выравнивания по перпендикулярной оси есть правилос align-items:(center|flex-end|flex-start|stretch<i>[при использовании все элементы растягиваются вдоль перпендикулярной оси])</i></p>
+        <p>Для выравнивания по перпендикулярной оси есть правило align-items:(center|flex-end|flex-start|stretch<i>[при использовании все элементы растягиваются вдоль перпендикулярной оси])</i></p>
         <div>
             <table>
                 <tr>
@@ -278,6 +278,53 @@
                 <div class="flex">5</div>
             </section>
         </div>
+        <p>Если ширина родительского элемента будет меньше суммарной ширины вложенных, то можно перенести элементы с помщью правила <b>flex-wrap:wrap</b></p>
+        <p>Для того чтобы упралять расположением рядов вдоль поперечной оси существует свойство <b>align-content</b>:(flex-start|space-between|space-around)</p>
+        <div>
+            <table>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td> <code>
+                            &lt;section&gt; <br>
+                            &lt;div class="flex"&gt;1&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;2&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;3&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;4&lt;/div&gt;<br>
+                            &lt;div class="flex"&gt;5&lt;/div&gt;<br>
+                            &lt;/section&gt;
 
+                        </code>
+                    </td>
+                    <td> <code> .flex {<br>
+                            width: 40px;<br>
+                            background: lime;<br>
+                            border: 1px solid;<br>
+                            }<br>
+                            section {<br>
+                            display: flex;<br>
+                            border: 1px solid;<br>
+                            height: 300px;<br>
+                            width: 150px;<br>
+                            flex-wrap:wrap;<br>
+                            align-content: space-around;
+                            <br>
+                            }</code>
+                    </td>
+
+                </tr>
+            </table>
+            <br>
+            <section class="section_4">
+                <div class="flex">1</div>
+                <div class="flex">2</div>
+                <div class="flex">3</div>
+                <div class="flex">4</div>
+                <div class="flex">5</div>
+            </section>
+        </div>
+        <p>align-content всегда важнее, чем align-item, поэтому можно использовать align-content (спецификация новых версий браузера, в старых версиях может конфликтовать)</p>
     </div>
 </body></html>
