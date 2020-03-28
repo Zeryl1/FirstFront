@@ -1,11 +1,22 @@
  * {
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
+/*      box-sizing: border-box;
      border: 1px solid red;
-     border-collapse: collapse;
+     border-collapse: collapse; */
  }
 
+ h1 {
+     font-size: 48px;
+     font-weight: 600;
+     line-height: 58px;
+     text-transform: capitalize;
+     color: #FFFFFF;
+     padding: 25px 0 0 30px;
+     margin-bottom: 35px;
+     position: relative;
+
+ }
 
  body {
      font-family: 'Montserrat', sans-serif;
@@ -19,18 +30,18 @@
  .main-wrapper {
      margin: 0 auto;
      width: 1170px;
-
+     padding: 0 15px;
 
      /* Можно задать для класса main-menu правило margin-left: auto. */
  }
 
-header .main-wrapper {
-         height: 100%;
-       padding: 0 15px;
+ header .main-wrapper {
+     height: 100%;
+
      display: flex;
      align-items: center;
-     justify-content: space-between;  
-}
+     justify-content: space-between;
+ }
 
  .main-menu > ul > li {
      display: inline-block;
@@ -69,4 +80,58 @@ header .main-wrapper {
 
  .main-menu > ul > li:last-child > a {
      margin-right: 0;
+ }
+
+ .main-board {
+     height: 500px;
+     background: url(src/bg.jpg);
+     background-size: cover;
+     background-position: 50% -50px;
+     position: relative;
+ }
+
+ .main-board::after {
+     content: "";
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+     background: rgba(33, 42, 73, 0.6);
+ }
+
+ .main-board .main-wrapper {
+     display: flex;
+     align-items: center;
+     height: 100%;
+     position: relative;
+     z-index: 2;
+ }
+
+ .mb_left-block {
+     width: 50%;
+ }
+
+ .main-board .main-wrapper > img {
+     margin: auto;
+ }
+
+ .main-board h1::before {
+     content: "";
+     width: 115px;
+     height: 5px;
+     position: absolute;
+     background: #00D5C3;
+     top: 0;
+     left: 0;
+ }
+
+ .main-board h1::after {
+     content: "";
+     height: 115px;
+     width: 5px;
+     position: absolute;
+     background: #00D5C3;
+     top: 0;
+     left: 0;
  }
